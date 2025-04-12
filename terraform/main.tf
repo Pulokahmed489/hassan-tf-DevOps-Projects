@@ -69,8 +69,8 @@ resource "aws_security_group" "maingroup" {
 }
 
 resource "aws_key_pair" "deployer" {
-  key_name   = var.key_name
-  public_key = var.public_key
+  key_name   = "test230"
+  public_key = file("~/.ssh/id_rsa.pub")
 }
 
 output "instance_public_ip" {
