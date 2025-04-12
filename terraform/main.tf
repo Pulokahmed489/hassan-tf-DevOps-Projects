@@ -6,6 +6,7 @@ terraform {
         }
     }
     backend "s3"{
+        bucket = "hassan900"
         key = "aws/ec2-deploy/terraform.tfstate"
     }
 }
