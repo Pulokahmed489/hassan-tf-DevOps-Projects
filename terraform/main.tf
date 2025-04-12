@@ -31,7 +31,7 @@ resource "aws_instance" "server" {
         "name" = "DeployVM"
     }
 }
-resource "aws_iam_instance_profile " "ec2-profile" {
+resource "aws_iam_instance_profile" "ec2-profile" {
     name = "ec2-profile"
     role = "EC2-ECR-AUTH"
 
