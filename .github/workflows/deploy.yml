@@ -29,7 +29,7 @@ jobs:
 
       - name: Terraform Init
         id: init
-        run: terraform init -backend-config="bucket=$TF_STATE_BUCKET_NAME" -backend-config="region=us-east-1"
+        run: terraform init -backend-config="bucket=hassan900" -backend-config="region=us-east-1"
         working-directory: ./terraform
 
       - name: Terraform Plan
