@@ -70,7 +70,7 @@ resource "aws_security_group" "maingroup" {
 
 resource "aws_key_pair" "deployer" {
   key_name   = "test230"
-  public_key = file("~/.ssh/test230.pub")
+  public_key = file("C:/Users/mahbo/test230.pub")
 }
 
 output "instance_public_ip" {
